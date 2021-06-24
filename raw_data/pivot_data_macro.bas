@@ -39,7 +39,7 @@ Sub extract_data_from_pivot()
 
     Sheets("Planilha1").Select
     Dim relativePath As String
-    relativePath = ThisWorkbook.Path & Application.PathSeparator & "oil-derivative-fuels-by-uf-and-product.csv"
+    relativePath = ThisWorkbook.Path & Application.PathSeparator & "oil_derivative_fuels_by_uf_and_product.csv"
     ActiveWorkbook.SaveAs Filename:= _
         relativePath _
         , FileFormat:=xlCSV, CreateBackup:=False
@@ -47,7 +47,7 @@ Sub extract_data_from_pivot()
     ' Exports table I as .cvs
 
     Sheets("Planilha2").Select
-    relativePath = ThisWorkbook.Path & Application.PathSeparator & "diesel-by-uf-and-type.csv"
+    relativePath = ThisWorkbook.Path & Application.PathSeparator & "diesel_by_uf_and_type.csv"
     ActiveWorkbook.SaveAs Filename:= _
         relativePath _
         , FileFormat:=xlCSV, CreateBackup:=False
